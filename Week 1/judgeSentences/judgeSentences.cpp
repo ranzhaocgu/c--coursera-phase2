@@ -15,6 +15,19 @@ int main()
 {
 	int check_a, check_b, check_c, check_d;
 	int right_answer[4];
+
+	int order[4] = { 1, 2, 3, 4 };
+	check_a = check_A(order);
+	check_b = check_B(order);
+	check_c = check_C(order);
+	check_d = check_D(order);
+
+	if (check_a && check_b && check_c && check_d){
+		for (int x = 0; x < 4; x++){
+			cout << order[x] << endl;
+		}
+	}
+
 	for (int i = 0; i < 3; i++){
 		for (int j = i + 1; j < 4; j++){
 			int order[4] = { 1, 2, 3, 4 };
